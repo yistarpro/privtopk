@@ -1,0 +1,100 @@
+Test on bound: 8, number of codes: 8 , output dimension : 50
+7514.000000Estimated accuracy:85 per 128, Maxerror: 0.000017
+11141.000000Estimated accuracy:86 per 128, Maxerror: 0.000035
+16580.000000Estimated accuracy:91 per 128, Maxerror: 0.000035
+10010.000000Estimated accuracy:86 per 128, Maxerror: 0.000035
+10093.000000Estimated accuracy:78 per 128, Maxerror: 0.000035
+14492.000000Estimated accuracy:85 per 128, Maxerror: 0.000035
+15920.000000Estimated accuracy:84 per 128, Maxerror: 0.000035
+7127.000000Estimated accuracy:80 per 128, Maxerror: 0.000035
+Average time = 11609.625000, Std =3419.405611Estimated accuracy:0.659180, maxerror: 0.000035, 14.782939
+Test on bound: 8, number of codes: 16 , output dimension : 50
+7658.000000Estimated accuracy:89 per 128, Maxerror: 0.000012
+10239.000000Estimated accuracy:95 per 128, Maxerror: 0.000030
+9594.000000Estimated accuracy:90 per 128, Maxerror: 0.000030
+5609.000000Estimated accuracy:87 per 128, Maxerror: 0.000030
+9267.000000Estimated accuracy:90 per 128, Maxerror: 0.000030
+5730.000000Estimated accuracy:88 per 128, Maxerror: 0.000030
+11678.000000Estimated accuracy:91 per 128, Maxerror: 0.000031
+14036.000000Estimated accuracy:96 per 128, Maxerror: 0.000031
+Average time = 9226.375000, Std =2694.322871Estimated accuracy:0.708984, maxerror: 0.000031, 14.973080
+Test on bound: 8, number of codes: 32 , output dimension : 50
+9287.000000Estimated accuracy:91 per 128, Maxerror: 0.000020
+9297.000000Estimated accuracy:99 per 128, Maxerror: 0.000020
+5536.000000Estimated accuracy:92 per 128, Maxerror: 0.000020
+5666.000000Estimated accuracy:89 per 128, Maxerror: 0.000020
+8908.000000Estimated accuracy:89 per 128, Maxerror: 0.000020
+5747.000000Estimated accuracy:86 per 128, Maxerror: 0.000020
+5607.000000Estimated accuracy:87 per 128, Maxerror: 0.000030
+7426.000000Estimated accuracy:99 per 128, Maxerror: 0.000030
+Average time = 7184.250000, Std =1638.987626Estimated accuracy:0.714844, maxerror: 0.000030, 15.038000
+Test on bound: 8, number of codes: 64 , output dimension : 50
+7733.000000Estimated accuracy:97 per 128, Maxerror: 0.000015
+9144.000000Estimated accuracy:89 per 128, Maxerror: 0.000034
+11098.000000Estimated accuracy:91 per 128, Maxerror: 0.000034
+9793.000000Estimated accuracy:86 per 128, Maxerror: 0.000034
+8747.000000Estimated accuracy:96 per 128, Maxerror: 0.000034
+10724.000000Estimated accuracy:97 per 128, Maxerror: 0.000034
+8683.000000Estimated accuracy:89 per 128, Maxerror: 0.000034
+16630.000000Estimated accuracy:96 per 128, Maxerror: 0.000034
+Average time = 10319.000000, Std =2600.287580Estimated accuracy:0.723633, maxerror: 0.000034, 14.859808
+Test on bound: 16, number of codes: 32 , output dimension : 50
+11519.000000Estimated accuracy:94 per 128, Maxerror: 0.000014
+12353.000000Estimated accuracy:95 per 128, Maxerror: 0.000020
+12045.000000Estimated accuracy:91 per 128, Maxerror: 0.000020
+12530.000000Estimated accuracy:90 per 128, Maxerror: 0.000020
+11865.000000Estimated accuracy:86 per 128, Maxerror: 0.000020
+13458.000000Estimated accuracy:89 per 128, Maxerror: 0.000020
+12053.000000Estimated accuracy:94 per 128, Maxerror: 0.000028
+12632.000000Estimated accuracy:98 per 128, Maxerror: 0.000028
+Average time = 12306.875000, Std =551.332349Estimated accuracy:0.719727, maxerror: 0.000028, 15.116027
+Test on bound: 8, number of codes: 8 , output dimension : 300
+57776.000000Estimated accuracy:79 per 128, Maxerror: 0.000051
+58159.000000Estimated accuracy:86 per 128, Maxerror: 0.000052
+59418.000000Estimated accuracy:77 per 128, Maxerror: 0.000069
+59663.000000Estimated accuracy:82 per 128, Maxerror: 0.000069
+60839.000000Estimated accuracy:76 per 128, Maxerror: 0.000069
+59033.000000Estimated accuracy:74 per 128, Maxerror: 0.000069
+58219.000000Estimated accuracy:80 per 128, Maxerror: 0.000105
+58580.000000Estimated accuracy:83 per 128, Maxerror: 0.000105
+Average time = 58960.875000, Std =933.867956Estimated accuracy:0.622070, maxerror: 0.000105, 13.212887
+Test on bound: 8, number of codes: 16 , output dimension : 300
+58918.000000Estimated accuracy:94 per 128, Maxerror: 0.000068
+63585.000000Estimated accuracy:87 per 128, Maxerror: 0.000121
+57441.000000Estimated accuracy:92 per 128, Maxerror: 0.000121
+58076.000000Estimated accuracy:90 per 128, Maxerror: 0.000121
+58200.000000Estimated accuracy:85 per 128, Maxerror: 0.000121
+59105.000000Estimated accuracy:90 per 128, Maxerror: 0.000121
+59345.000000Estimated accuracy:93 per 128, Maxerror: 0.000121
+62776.000000Estimated accuracy:100 per 128, Maxerror: 0.000121
+Average time = 59680.750000, Std =2110.511416Estimated accuracy:0.713867, maxerror: 0.000121, 13.016446
+Test on bound: 8, number of codes: 32 , output dimension : 300
+140794.000000Estimated accuracy:97 per 128, Maxerror: 0.000080
+264730.000000Estimated accuracy:101 per 128, Maxerror: 0.000080
+151768.000000Estimated accuracy:98 per 128, Maxerror: 0.000080
+135611.000000Estimated accuracy:100 per 128, Maxerror: 0.000132
+58470.000000Estimated accuracy:96 per 128, Maxerror: 0.000132
+58240.000000Estimated accuracy:98 per 128, Maxerror: 0.000132
+58773.000000Estimated accuracy:101 per 128, Maxerror: 0.000132
+57609.000000Estimated accuracy:99 per 128, Maxerror: 0.000132
+Average time = 115749.375000, Std =68674.186278Estimated accuracy:0.771484, maxerror: 0.000132, 12.886972
+Test on bound: 8, number of codes: 64 , output dimension : 300
+61388.000000Estimated accuracy:106 per 128, Maxerror: 0.000065
+59304.000000Estimated accuracy:103 per 128, Maxerror: 0.000114
+60710.000000Estimated accuracy:95 per 128, Maxerror: 0.000114
+59467.000000Estimated accuracy:103 per 128, Maxerror: 0.000114
+59451.000000Estimated accuracy:97 per 128, Maxerror: 0.000114
+59957.000000Estimated accuracy:97 per 128, Maxerror: 0.000114
+62340.000000Estimated accuracy:100 per 128, Maxerror: 0.000114
+61402.000000Estimated accuracy:109 per 128, Maxerror: 0.000114
+Average time = 60502.375000, Std =1056.205347Estimated accuracy:0.791016, maxerror: 0.000114, 13.103251
+Test on bound: 16, number of codes: 32 , output dimension : 300
+77467.000000Estimated accuracy:97 per 128, Maxerror: 0.000049
+73537.000000Estimated accuracy:103 per 128, Maxerror: 0.000053
+73736.000000Estimated accuracy:92 per 128, Maxerror: 0.000054
+76955.000000Estimated accuracy:104 per 128, Maxerror: 0.000099
+76605.000000Estimated accuracy:98 per 128, Maxerror: 0.000099
+72128.000000Estimated accuracy:98 per 128, Maxerror: 0.000099
+72739.000000Estimated accuracy:102 per 128, Maxerror: 0.000099
+75354.000000Estimated accuracy:106 per 128, Maxerror: 0.000099
+Average time = 74815.125000, Std =1918.156500Estimated accuracy:0.781250, maxerror: 0.000099, 13.296506
