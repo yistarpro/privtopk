@@ -67,10 +67,6 @@ int main(int argc, char **argv) {
                     TopkTest_MT_opt(49, 1 << i, 128, 1 << j, bootlv, iteration, 128, 64, init_ciphertext_bd, true);
                 }
             }
-            // cout << "Additional experiments for optimized param, iteration: " << iteration << endl;
-            // Exceptions:
-            // TopkTest_MT_opt(49, 1 << 17, 128, 1, bootlv, iteration, 128, 64, 16, false, 4);
-            // TopkTest_MT_opt(49, 1 << 16, 128, 2, bootlv, iteration, 128, 64, 16, false, 4);
         }
 
     }
