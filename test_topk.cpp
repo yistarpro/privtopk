@@ -34,11 +34,17 @@ int main(int argc, char **argv) {
     if(size != 0){
         if(numk != 0){
             cout << "numk: " << numk << "size: " << size <<  "iteration: " << iteration << endl;
-            TopkTest_MT_opt(49, size, 128, numk, 4, iteration, 128, 64, 128, true);
+            size_t init_ciphertext_bd = 128;
+            if(size == 1<< 17 && numk == 1)init_ciphertext_bd = 16; //Experimentally optimized param
+            if(size == 1<< 16 && numk == 2)init_ciphertext_bd = 16; //Experimentally optimized param
+            TopkTest_MT_opt(49, size, 128, numk, 4, iteration, 128, 64, init_ciphertext_bd, true);
         }else{
             cout << "Operating experiments over all k, with size: " << size <<  "iteration: " << iteration << endl;
             for(usint j=0;j<5;j++){ 
-                TopkTest_MT_opt(49, size, 128, 1 << j, bootlv, iteration, 128, 64, 128, true);
+                size_t init_ciphertext_bd = 128;
+                if(size == 1<< 17 && j == 0)init_ciphertext_bd = 16; //Experimentally optimized param
+                if(size == 1<< 16 && j == 1)init_ciphertext_bd = 16; //Experimentally optimized param
+                TopkTest_MT_opt(49, size, 128, 1 << j, bootlv, iteration, 128, 64, init_ciphertext_bd, true);
             }
         }
     }else{
@@ -46,19 +52,25 @@ int main(int argc, char **argv) {
         if(numk != 0){
             cout << "Operating experiments over all size, with k: " << numk <<  "iteration: " << iteration << endl;
             for(usint i=11;i<18;i++){ 
-                TopkTest_MT_opt(49, 1 << i, 128, numk, bootlv, iteration, 128, 64, 128, true);
+                size_t init_ciphertext_bd = 128;
+                if(i == 17 && numk == 1)init_ciphertext_bd = 16; //Experimentally optimized param
+                if(i == 16 && numk == 2)init_ciphertext_bd = 16; //Experimentally optimized param
+                TopkTest_MT_opt(49, 1 << i, 128, numk, bootlv, iteration, 128, 64, init_ciphertext_bd, true);
             }
         }else{
             cout << "Operating experiments over all size and k, iteration: " << iteration << endl;
             for(usint j=0;j<5;j++){ 
                 for(usint i=11;i<18;i++){ 
-                    TopkTest_MT_opt(49, 1 << i, 128, 1 << j, bootlv, iteration, 128, 64, 128, true);
+                    size_t init_ciphertext_bd = 128;
+                    if(i == 17 && j == 0)init_ciphertext_bd = 16; //Experimentally optimized param
+                    if(i == 16 && j == 1)init_ciphertext_bd = 16; //Experimentally optimized param
+                    TopkTest_MT_opt(49, 1 << i, 128, 1 << j, bootlv, iteration, 128, 64, init_ciphertext_bd, true);
                 }
             }
-            cout << "Additional experiments for optimized param, iteration: " << iteration << endl;
+            // cout << "Additional experiments for optimized param, iteration: " << iteration << endl;
             // Exceptions:
-            TopkTest_MT_opt(49, 1 << 17, 128, 1, bootlv, iteration, 128, 64, 16, false, 4);
-            TopkTest_MT_opt(49, 1 << 16, 128, 2, bootlv, iteration, 128, 64, 16, false, 4);
+            // TopkTest_MT_opt(49, 1 << 17, 128, 1, bootlv, iteration, 128, 64, 16, false, 4);
+            // TopkTest_MT_opt(49, 1 << 16, 128, 2, bootlv, iteration, 128, 64, 16, false, 4);
         }
 
     }

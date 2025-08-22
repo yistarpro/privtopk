@@ -181,7 +181,13 @@ namespace ckkseif {
         int32_t init_numct_bound_opt = init_numct_bound;
         int32_t mergecrit = custom_mergecrit;
         if(optimized){
-            mergecrit = 2;
+            if(numk % 2 == 0){
+                mergecrit = 16 / sqrt(2*numk);
+            }else{
+                mergecrit = 16 / sqrt(4*numk);
+            }
+            std::cout << "Merge Cirterion updated to : "<<  batchSize / (mergecrit * numk) << endl; 
+        
             init_numct_bound_opt = roundestimator(size, numk, initial_subsize_bound, init_numct_bound, mergecrit);
         }
        	vector<int32_t> subsizes = schedule_topk(size, numk, initial_subsize_bound, init_numct_bound_opt, false, 128, mergecrit, false); 
